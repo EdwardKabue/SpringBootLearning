@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-
+import org.springframework.stereotype.Service;
 
 
 //@Component marks a class a bean for Spring boot
 //@Scope determines the scope of a bean. Can be either singleton, prototype, request or session.
-@Component
+@Service
 //@Scope("prototype")
 //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) //Better way of defining a bean's scope.
 public class BinarySearchImpl {

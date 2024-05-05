@@ -5,8 +5,9 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class PersonDAO {
     @Autowired
     JdbcConnection jdbcConnection;
